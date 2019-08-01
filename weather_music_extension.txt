@@ -1,0 +1,19 @@
+WEATHER MUSIC EXTENTION
+An extention that displays the weather and suggests playlists based
+off the weather conditions.
+
+============== THINGS WE NEED (BASIC FEATURES) =============
+
+1. GET request from accuweather API
+2. Request user location
+3. GET request from spotify API to suggest playlists that match 
+   the weather (either by key phrase or genre)
+4. Random images to reflect the current weather 
+5. Display the current weather (icon and temperature)
+
+
+
+============= STRETCH FEATURES ==================
+
+1. Scroll more than 1 playlist (new playlists when user clicks)
+

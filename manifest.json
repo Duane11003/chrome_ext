@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "Accuweather Playlist",
+    "version": "1.0",
+    "description":
+        "A playlist for any weather to set the right mood.",
+
+
+    "content_scripts": [
+        {
+            "matches": ["*://mozilla.org/"],
+            "js": ["popup.js"],
+            "css": ["popup.css"],
+            "run_at": "document_idle"
+        }
+    ],
+    "browser_action": {
+        "default_title": "Click for weather!",
+        "default_popup": "popup.html"
+      },
+    "permissions": ["tabs", "geolocation", "<all_urls>", "*://*.api.openweathermap.org/*",
+        "*://*.api.unsplash.com//*"]
+}
